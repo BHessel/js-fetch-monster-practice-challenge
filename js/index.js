@@ -1,4 +1,5 @@
 const url = 'http://localhost:3000/monsters'
+const container = document.querySelector('#monster-container')
 
 //when page loads
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,9 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderMonster(monster){
     //show name
-    console.log(monster)
+    let nameId = document.getElementById('nameId')
+    nameId.innerText = monster.name
+        
     //show age
+    let ageId = document.getElementById('ageId')
+    ageId.innerText = "Age: " + monster.age
 
-    //show description
+    //show description (bio)
+    let bio = document.getElementById('bio')
+    bio.innerText = "Bio: " + monster.description
+
+    container.append(nameId, ageId, bio)
 
 }
