@@ -70,5 +70,8 @@ function createMonster(event){
 //I'll want to add an event listener to each button
 
 //fwd button should show next 50, IF there are 50 (or fewer) left. Else do nothing
+    // url.charAt(url.length-1) + 1 ?
+        //url will only change by last digit, so use a for loop and counter to get the next page(s) working?
 
 //back button should go back 50, unless on page 1
+    //same thing but w/ a -1 here?
